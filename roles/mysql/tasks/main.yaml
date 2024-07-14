@@ -18,4 +18,6 @@
     enabled: yes
 
 - name: Setup root password to MySQL
-  ansible.builtin.command: "mysql_secure_installation --set-root-pass {{ lookup('aws_ssm', '/mechanoidstore/{{env}}/mysql_root_password', region='us-east-1', decrypt=True ) }}"
+  ansible.builtin.command: mysql_secure_installation --set-root-pass RoboShop@1
+
+  # {{ lookup('aws_ssm', '/mechanoidstore/{{env}}/mysql_root_password', region='us-east-1', decrypt=True ) }}
