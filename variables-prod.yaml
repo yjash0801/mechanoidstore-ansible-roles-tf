@@ -8,3 +8,5 @@ PAYMENT_HOST: payment-prod.mechanoidstore.online
 MYSQL_HOST: mysql-prod.mechanoidstore.online
 RABBITMQ_HOST: rabbitmq-prod.mechanoidstore.online
 DISPATCH_HOST: dispatch-prod.mechanoidstore.online
+NEXUS_URL: http://172.31.38.156:8081/repository
+group_id: "com/mechanoidstore"
